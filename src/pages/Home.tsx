@@ -349,7 +349,7 @@ export default function Home() {
             ].map((item, i) => (
               <div key={i} className="relative group">
                 <div className="mb-10 relative">
-                  <div className="w-24 h-24 bg-slate-50 rounded-full mx-auto flex items-center justify-center group-hover:bg-green-600 transition-colors duration-500">
+                  <div className="w-24 h-24 bg-slate-50 rounded-full mx-auto flex items-center justify-center transition-colors duration-500">
                     {item.icon}
                   </div>
                   <span className="absolute -top-2 right-1/2 translate-x-12 bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold border-4 border-white">

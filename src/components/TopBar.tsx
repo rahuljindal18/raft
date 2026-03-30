@@ -9,7 +9,7 @@ export default function TopBar() {
             <Mail className="w-4 h-4 text-green-500" />
             <span>hr@raftconsulting.in</span>
           </a>
-          <a href="tel:+919810304630" className="flex items-center gap-2 hover:text-green-500 transition-colors">
+          <a href="tel:+919560333643" className="flex items-center gap-2 hover:text-green-500 transition-colors">
             <Phone className="w-4 h-4 text-green-500" />
             <span>+91-9560333643</span>
           </a>

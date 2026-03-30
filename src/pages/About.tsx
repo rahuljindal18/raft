@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { CheckCircle2, Target, Lightbulb, Settings, Users, Minus } from "lucide-react";
 
 export default function About() {
@@ -126,9 +127,9 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold text-center md:text-left">
             Ready to grow your business with us?
           </h2>
-          <button className="bg-white text-green-600 px-10 py-4 font-bold uppercase tracking-widest text-sm hover:bg-slate-900 hover:text-white transition-all">
+          <Link to="/contact-us/" className="bg-white text-green-600 px-10 py-4 font-bold uppercase tracking-widest text-sm hover:bg-slate-900 hover:text-white transition-all">
             Get In Touch
-          </button>
+          </Link>
         </div>
       </section>
     </div>
