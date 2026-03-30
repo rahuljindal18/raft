@@ -1,8 +1,31 @@
+
+import { useEffect } from "react";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
 import { ChevronRight, CheckCircle2, Circle, Calculator, FileText, Briefcase, Landmark, ShieldCheck } from "lucide-react";
 
 export default function AccountingCompliances() {
+    // Scroll to anchor on hash change or initial load
+    useEffect(() => {
+      if (window.location.hash) {
+        const id = window.location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100); // Delay to ensure DOM is ready
+        }
+      }
+      const onHashChange = () => {
+        const id = window.location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      };
+      window.addEventListener('hashchange', onHashChange);
+      return () => window.removeEventListener('hashchange', onHashChange);
+    }, []);
   const accountingSolutions = [
     {
       title: "Book keeping",
@@ -113,11 +136,7 @@ export default function AccountingCompliances() {
           >
             Accounting Compliances
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Accounting Compliances</span>
-          </nav>
+          
         </div>
       </section>
 

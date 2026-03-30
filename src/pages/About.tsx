@@ -21,11 +21,7 @@ export default function About() {
           >
             About Us
           </motion.h1>
-          <div className="flex items-center justify-center gap-4 text-slate-300 font-bold uppercase tracking-widest text-sm">
-            <a href="/" className="hover:text-green-500 transition-colors">Home</a>
-            <span className="text-green-500">•</span>
-            <span>About Us</span>
-          </div>
+          
         </div>
       </section>
 

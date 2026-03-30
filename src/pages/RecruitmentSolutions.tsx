@@ -61,11 +61,7 @@ export default function RecruitmentSolutions() {
           >
             Recruitment Solutions
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Recruitment Solutions</span>
-          </nav>
+          
         </div>
       </section>
 
@@ -133,32 +129,7 @@ export default function RecruitmentSolutions() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-[#1c1c1c] text-white overflow-hidden relative">
-        <div className="absolute top-0 left-0 w-full h-full opacity-10">
-          <img 
-            src="https://picsum.photos/seed/business/1920/1080" 
-            alt="CTA Background" 
-            className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
-        </div>
-        <div className="max-w-[1400px] mx-auto px-4 relative z-10 text-center space-y-8">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Ready to find your next top talent?</h2>
-          <p className="text-white/60 text-xl max-w-2xl mx-auto">
-            Let us help you build the team that will take your business to the next level.
-          </p>
-          <div className="pt-4">
-            <Link 
-              to="/register" 
-              className="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white px-12 py-5 font-bold uppercase tracking-widest text-sm transition-all shadow-2xl"
-            >
-              Start Hiring Now
-              <ChevronRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 }

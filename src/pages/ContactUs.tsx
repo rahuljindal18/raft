@@ -23,11 +23,6 @@ export default function ContactUs() {
           >
             Contact Us
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">raFT Consulting</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Contact Us</span>
-          </nav>
         </div>
       </section>
 
@@ -91,28 +86,23 @@ export default function ContactUs() {
       {/* Contact Form & Map Section */}
       <section className="py-24">
         <div className="max-w-[1400px] mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            
-
-            {/* Map Placeholder */}
-            <motion.div 
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative h-full min-h-[500px] rounded-sm overflow-hidden shadow-2xl"
-            >
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.208757434149!2d77.35140831508177!3d28.593510982433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50702b8572d%3A0x79c13b7a353023e!2sSector%2059%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1648100000000!5m2!1sen!2sin" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale hover:grayscale-0 transition-all duration-700"
-              ></iframe>
-            </motion.div>
-          </div>
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative h-full min-h-[500px] rounded-sm overflow-hidden shadow-2xl"
+          >
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.208757434149!2d77.35140831508177!3d28.593510982433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50702b8572d%3A0x79c13b7a353023e!2sSector%2059%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1648100000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="500" 
+              style={{ border: 0 }} 
+              allowFullScreen={true} 
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="transition-all duration-700"
+            ></iframe>
+          </motion.div>
         </div>
       </section>
 

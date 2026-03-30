@@ -54,11 +54,6 @@ export default function CurrentOpenings() {
           >
             Current Openings
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Current Openings</span>
-          </nav>
         </div>
       </section>
 
@@ -149,24 +144,6 @@ export default function CurrentOpenings() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-green-600">
-        <div className="max-w-[1400px] mx-auto px-4 text-center">
-          <h2 className="text-white text-4xl md:text-5xl font-bold mb-8 tracking-tight">
-            Didn't find what you were looking for?
-          </h2>
-          <p className="text-white/80 text-xl mb-12 max-w-2xl mx-auto">
-            Submit your resume to our database and we'll contact you when a suitable position opens up.
-          </p>
-          <Link 
-            to="/register" 
-            className="inline-block bg-white text-green-600 px-12 py-5 font-bold uppercase tracking-widest text-sm hover:bg-[#1c1c1c] hover:text-white transition-all shadow-xl"
-          >
-            Submit Your Resume
-          </Link>
         </div>
       </section>
     </div>

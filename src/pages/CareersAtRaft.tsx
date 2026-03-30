@@ -37,11 +37,7 @@ export default function CareersAtRaft() {
           >
             Careers At raFT
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Careers At raFT</span>
-          </nav>
+          
         </div>
       </section>
 
@@ -103,7 +99,7 @@ export default function CareersAtRaft() {
               </div>
             </div>
 
-            <div className="bg-[#1c1c1c] p-10 md:p-16 text-white relative overflow-hidden">
+            {/* <div className="bg-[#1c1c1c] p-10 md:p-16 text-white relative overflow-hidden">
               <div className="absolute top-0 right-0 w-64 h-64 bg-green-500/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
               <div className="relative z-10 space-y-6">
                 <h4 className="text-3xl font-bold tracking-tight">Growth Opportunity</h4>
@@ -120,7 +116,7 @@ export default function CareersAtRaft() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </section>

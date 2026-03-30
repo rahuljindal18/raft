@@ -84,11 +84,11 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
                     {/* Sub-menu for Accounting Compliances */}
                     <div className="absolute left-full top-0 w-[240px] bg-[#1c1c1c] shadow-2xl opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform translate-x-4 group-hover/sub:translate-x-0">
                       <div className="py-0">
-                        <Link to="/accounting-compliances/#accounting" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Accounting Solutions</Link>
-                        <Link to="/accounting-compliances/#goods" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Goods And Services Tax</Link>
-                        <Link to="/accounting-compliances/#payroll" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Payroll Processing</Link>
-                        <Link to="/accounting-compliances/#business" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Business Setup In India</Link>
-                        <Link to="/accounting-compliances/#tax" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors">Tax Compliances</Link>
+                        <a href="/accounting-compliances#accounting" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Accounting Solutions</a>
+                        <a href="/accounting-compliances#goods" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Goods And Services Tax</a>
+                        <a href="/accounting-compliances#payroll" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Payroll Processing</a>
+                        <a href="/accounting-compliances#business" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors border-b border-white/5">Business Setup In India</a>
+                        <a href="/accounting-compliances#tax" className="block px-8 py-4 text-sm text-white hover:text-green-500 transition-colors">Tax Compliances</a>
                       </div>
                     </div>
                   </div>
@@ -111,8 +111,8 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
               </div>
               <div className="absolute top-full left-1/2 -translate-x-1/2 w-[280px] bg-[#1c1c1c] shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-4 group-hover:translate-y-0 z-[110]">
                 <div className="py-0">
-                  <Link to="/current-openings/" className="block px-8 py-5 text-white hover:text-green-500 transition-colors border-b border-white/5">Current Openings</Link>
-                  <Link to="/submit-your-resume/" className="block px-8 py-5 text-white hover:text-green-500 transition-colors border-b border-white/5">Submit Your Resume</Link>
+                  {/* <Link to="/current-openings/" className="block px-8 py-5 text-white hover:text-green-500 transition-colors border-b border-white/5">Current Openings</Link> */}
+                  
                   <Link to="/careers-at-raft/" className="block px-8 py-5 text-white hover:text-green-500 transition-colors">Careers At RaFT</Link>
                 </div>
               </div>

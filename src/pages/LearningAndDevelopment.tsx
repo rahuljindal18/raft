@@ -157,11 +157,6 @@ export default function LearningAndDevelopment() {
           >
             Learning And Development
           </motion.h1>
-          <nav className="flex justify-center items-center gap-2 text-white/60 font-bold uppercase tracking-widest text-sm">
-            <Link to="/" className="hover:text-green-500 transition-colors">Home</Link>
-            <ChevronRight className="w-4 h-4" />
-            <span className="text-green-500">Learning And Development</span>
-          </nav>
         </div>
       </section>
 

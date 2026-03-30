@@ -9,16 +9,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Solutions from "./pages/Solutions";
 import Register from "./pages/Register";
-import Blog from "./pages/Blog";
 import CurrentOpenings from "./pages/CurrentOpenings";
-import SubmitResume from "./pages/SubmitResume";
 import CareersAtRaft from "./pages/CareersAtRaft";
 import RecruitmentSolutions from "./pages/RecruitmentSolutions";
 import OutsourcedStaffing from "./pages/OutsourcedStaffing";
 import LearningAndDevelopment from "./pages/LearningAndDevelopment";
 import AccountingCompliances from "./pages/AccountingCompliances";
-import LeadershipStylesBlog from "./pages/LeadershipStylesBlog";
-import RoleOfHRBlog from "./pages/RoleOfHRBlog";
 import ContactUs from "./pages/ContactUs";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
@@ -36,14 +32,10 @@ export default function App() {
           <Route path="learning-and-development/" element={<LearningAndDevelopment />} />
           <Route path="accounting-compliances/" element={<AccountingCompliances />} />
           <Route path="register-with-us/" element={<Register />} />
-          <Route path="blog/" element={<Blog />} />
-          <Route path="leadership-styles-which-can-help-transformation/" element={<LeadershipStylesBlog />} />
-          <Route path="role-of-hr-in-learning-and-development/" element={<RoleOfHRBlog />} />
           <Route path="contact-us/" element={<ContactUs />} />
           <Route path="privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="terms/" element={<Terms />} />
-          <Route path="current-openings/" element={<CurrentOpenings />} />
-          <Route path="submit-your-resume/" element={<SubmitResume />} />
+          {/* <Route path="current-openings/" element={<CurrentOpenings />} /> */}
           <Route path="careers-at-raft/" element={<CareersAtRaft />} />
         </Route>
       </Routes>
