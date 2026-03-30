@@ -135,7 +135,7 @@ export default function SubmitResume() {
                 <Phone className="w-6 h-6 text-green-500" />
               </div>
               <h4 className="text-xl font-bold text-[#1c1c1c]">Call Us</h4>
-              <p className="text-gray-500">Speak with our recruiters<br/><span className="text-green-600 font-bold">+91-9810304630</span></p>
+              <p className="text-gray-500">Speak with our recruiters<br/><span className="text-green-600 font-bold">+91-9560333643</span></p>
             </div>
             <div className="space-y-4">
               <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto shadow-sm">

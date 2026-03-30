@@ -11,7 +11,7 @@ const openings = [
     salary: "As per standards",
     location: "Noida",
     description: "Should have experience as a Team Lead. Responsible for leading frontend development using React and managing a team of developers.",
-    contact: "aishwarya@raftconsulting.in",
+    contact: "hr@raftconsulting.in",
     image: "https://raftconsulting.in/wp-content/uploads/2022/12/Screenshot-2022-12-05-at-1.21.43-PM-768x761.png"
   },
   {
@@ -22,7 +22,7 @@ const openings = [
     salary: "Competitive",
     location: "Remote / Hybrid",
     description: "Planning, designing, implementing, and administering a comprehensive global rewards strategy and programs including Compensation, Benefits and Employee wellness. Reports to Chief People Officer.",
-    contact: "jobs@raftconsulting.in",
+    contact: "hr@raftconsulting.in",
     image: "https://raftconsulting.in/wp-content/uploads/2022/12/Screenshot-2022-11-29-at-1.27.16-PM-1024x848.png"
   }
 ];

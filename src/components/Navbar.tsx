@@ -13,14 +13,17 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
         <div className="flex justify-between h-24 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <Link to="/" className="text-white text-5xl font-bold tracking-tighter flex items-baseline">
-              <span>r</span>
-              <span className="relative inline-block mx-0.5">
-                a
-                <span className="absolute -top-1 left-0 w-full h-[3px] bg-green-500 rounded-full"></span>
-              </span>
-              <span>FT</span>
-            </Link>
+            <a href="https://raftconsulting.in/" className="custom-logo-link" rel="home" aria-current="page">
+              <img
+                width="187"
+                height="60"
+                src="https://raftconsulting.in/wp-content/uploads/2022/12/logo-raft-white-1.png"
+                className="custom-logo"
+                alt="raFT Consulting"
+                decoding="async"
+                style={{ display: 'block' }}
+              />
+            </a>
           </div>
 
           {/* Nav Links */}
@@ -127,19 +130,7 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
                 <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[4px] border-b-green-500"></div>
               </div>
             </div>
-            <div className="relative py-4 group">
-              <Link to="/blog/" className="hover:text-green-500 transition-colors">Blog</Link>
-              {/* Active underline */}
-              {location.pathname === "/blog/" && (
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-[2px] bg-green-500 opacity-100">
-                  <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[4px] border-b-green-500"></div>
-                </div>
-              )}
-              {/* Hover underline */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-[2px] bg-green-500 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[4px] border-b-green-500"></div>
-              </div>
-            </div>
+            
           </nav>
 
           {/* Action Button */}

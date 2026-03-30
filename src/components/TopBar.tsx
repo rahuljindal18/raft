@@ -5,13 +5,13 @@ export default function TopBar() {
     <div className="text-slate-300 py-2 text-[13px] border-b border-white/5 hidden md:block">
       <div className="max-w-[1400px] mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center gap-6">
-          <a href="mailto:info@raftconsulting.in" className="flex items-center gap-2 hover:text-green-500 transition-colors">
+          <a href="mailto:hr@raftconsulting.in" className="flex items-center gap-2 hover:text-green-500 transition-colors">
             <Mail className="w-4 h-4 text-green-500" />
-            <span>info@raftconsulting.in</span>
+            <span>hr@raftconsulting.in</span>
           </a>
           <a href="tel:+919810304630" className="flex items-center gap-2 hover:text-green-500 transition-colors">
             <Phone className="w-4 h-4 text-green-500" />
-            <span>+91-9810304630</span>
+            <span>+91-9560333643</span>
           </a>
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-green-500" />

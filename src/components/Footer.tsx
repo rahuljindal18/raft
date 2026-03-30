@@ -13,7 +13,7 @@ export default function Footer() {
             </div>
             <div>
               <h6 className="font-bold text-slate-400 uppercase tracking-widest text-xs mb-1">Mail</h6>
-              <a href="mailto:info@raftconsulting.in" className="text-lg font-bold hover:text-green-500 transition-colors">info@raftconsulting.in</a>
+              <a href="mailto:hr@raftconsulting.in" className="text-lg font-bold hover:text-green-500 transition-colors">hr@raftconsulting.in</a>
             </div>
           </div>
           <div className="flex items-center gap-6">
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div>
               <h6 className="font-bold text-slate-400 uppercase tracking-widest text-xs mb-1">Call</h6>
-              <a href="tel:+919810304630" className="text-lg font-bold hover:text-green-500 transition-colors">+91-9810304630</a>
+              <a href="tel:+919560333643" className="text-lg font-bold hover:text-green-500 transition-colors">+91-9560333643</a>
             </div>
           </div>
           <div className="flex items-center gap-6">
@@ -38,16 +38,7 @@ export default function Footer() {
 
         {/* Footer Main Content */}
         <div className="grid lg:grid-cols-4 gap-16 mb-20">
-          {/* Contact Form */}
-          <div className="lg:col-span-1">
-            <form className="space-y-4">
-              <input type="text" placeholder="Name" className="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-sm focus:outline-none focus:border-green-500 transition-colors" />
-              <input type="tel" placeholder="Mobile Number" className="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-sm focus:outline-none focus:border-green-500 transition-colors" />
-              <input type="email" placeholder="Email" className="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-sm focus:outline-none focus:border-green-500 transition-colors" />
-              <textarea placeholder="Message" rows={4} className="w-full bg-white/5 border border-white/10 px-6 py-4 rounded-sm focus:outline-none focus:border-green-500 transition-colors resize-none"></textarea>
-              <button className="w-full bg-green-600 hover:bg-green-700 text-white py-4 font-bold uppercase tracking-widest text-sm transition-all">Send</button>
-            </form>
-          </div>
+          
 
           {/* Explore Links */}
           <div>
@@ -72,36 +63,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Recent Posts */}
-          <div>
-            <h4 className="text-xl font-bold mb-8">Blog</h4>
-            <div className="space-y-8">
-              {[
-                { 
-                  title: "Leadership Styles which can help Transformation.", 
-                  date: "April 10, 2024", 
-                  slug: "leadership-styles-which-can-help-transformation",
-                  img: "https://raftconsulting.in/wp-content/uploads/2024/04/Untitled-design-1-70x70.png" 
-                },
-                { 
-                  title: "Role of HR in Learning and Development", 
-                  date: "March 06, 2024", 
-                  slug: "role-of-hr-in-learning-and-development",
-                  img: "https://raftconsulting.in/wp-content/uploads/2024/03/Green-and-Beige-Human-Resources-Modern-Presentation--70x70.png" 
-                }
-              ].map((post, i) => (
-                <div key={i} className="flex gap-4 group">
-                  <img src={post.img} className="w-16 h-16 object-cover rounded-sm" alt="Post" />
-                  <div>
-                    <h5 className="text-sm font-bold leading-snug group-hover:text-green-500 transition-colors">
-                      <Link to={`/${post.slug}/`}>{post.title}</Link>
-                    </h5>
-                    <span className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-2 block">{post.date}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
 
         {/* Footer Bottom */}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
+
 import { 
   Target, 
   Lightbulb, 
@@ -13,6 +14,48 @@ import {
   ChevronRight, 
   Minus 
 } from "lucide-react";
+
+// Step 1: Support/Consultation Icon
+function SupportIcon({ className = "w-10 h-10 text-green-600" }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 48 48" stroke="currentColor" strokeWidth={2} xmlns="http://www.w3.org/2000/svg">
+      <rect x="8" y="28" width="32" height="12" rx="4" fill="none" stroke="currentColor"/>
+      <circle cx="24" cy="18" r="8" fill="none" stroke="currentColor"/>
+      <rect x="32" y="12" width="8" height="8" rx="2" fill="none" stroke="currentColor"/>
+      <path d="M40 16v2a2 2 0 0 1-2 2h-2" stroke="currentColor"/>
+      <circle cx="36" cy="16" r="1.5" fill="none" stroke="currentColor"/>
+    </svg>
+  );
+}
+
+// Step 2: Checklist with Clock Icon
+function ChecklistClockIcon({ className = "w-10 h-10 text-green-600" }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 48 48" stroke="currentColor" strokeWidth={2} xmlns="http://www.w3.org/2000/svg">
+      <rect x="8" y="8" width="20" height="32" rx="4" fill="none" stroke="currentColor"/>
+      <circle cx="34" cy="34" r="8" fill="none" stroke="currentColor"/>
+      <path d="M34 30v4l3 3" stroke="currentColor"/>
+      <polyline points="14,18 18,22 22,14" stroke="currentColor" fill="none"/>
+      <rect x="12" y="26" width="12" height="2" rx="1" fill="none" stroke="currentColor"/>
+    </svg>
+  );
+}
+
+// Step 3: Partnership/Contract Icon
+function PartnershipIcon({ className = "w-10 h-10 text-green-600" }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 48 48" stroke="currentColor" strokeWidth={2} xmlns="http://www.w3.org/2000/svg">
+      <ellipse cx="24" cy="36" rx="12" ry="6" fill="none" stroke="currentColor"/>
+      <circle cx="16" cy="20" r="4" fill="none" stroke="currentColor"/>
+      <circle cx="32" cy="20" r="4" fill="none" stroke="currentColor"/>
+      <rect x="20" y="24" width="8" height="6" rx="2" fill="none" stroke="currentColor"/>
+      <path d="M24 30v6" stroke="currentColor"/>
+      <path d="M20 36h8" stroke="currentColor"/>
+      <path d="M12 36c0-4 8-4 8 0" stroke="currentColor"/>
+      <path d="M36 36c0-4-8-4-8 0" stroke="currentColor"/>
+    </svg>
+  );
+}
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState("clients");
@@ -124,7 +167,7 @@ export default function Home() {
             ].map((feature, i) => (
               <div key={i} className="bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 text-center flex flex-col items-center">
                 <div className="p-10 flex flex-col items-center">
-                  <div className="mb-6 p-4 bg-slate-50 rounded-full group-hover:bg-green-600 group-hover:text-white transition-colors duration-500">
+                  <div className="mb-6 p-4 bg-slate-50 rounded-full transition-colors duration-500">
                     {feature.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-6 h-14 flex items-center">{feature.title}</h3>
@@ -188,7 +231,7 @@ export default function Home() {
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight">Single Window Corporate Solutions</h2>
               </div>
               <button className="bg-green-600 text-white px-10 py-4 font-bold uppercase tracking-widest text-sm hover:bg-slate-900 transition-colors">
-                Connect With Us
+                <a href="/our-solutions/" className="block w-full h-full">Connect With Us</a>
               </button>
             </div>
             
@@ -300,14 +343,14 @@ export default function Home() {
           
           <div className="grid md:grid-cols-3 gap-12">
             {[
-              { step: "01", title: "Connect with raFT", desc: "Call us or mail us and our team will get back to you in the shortest time period" },
-              { step: "02", title: "Share your Requirements", desc: "Our experienced teams, form an extension of your organisation by understanding your requirements with a detailed approach" },
-              { step: "03", title: "Contract With Us", desc: "We will ensure the advisory process is easy and cost effective in order to sustain your organisational growth" }
+              { step: "01", title: "Connect with raFT", desc: "Call us or mail us and our team will get back to you in the shortest time period", icon: <SupportIcon /> },
+              { step: "02", title: "Share your Requirements", desc: "Our experienced teams, form an extension of your organisation by understanding your requirements with a detailed approach", icon: <ChecklistClockIcon /> },
+              { step: "03", title: "Contract With Us", desc: "We will ensure the advisory process is easy and cost effective in order to sustain your organisational growth", icon: <PartnershipIcon /> }
             ].map((item, i) => (
               <div key={i} className="relative group">
                 <div className="mb-10 relative">
                   <div className="w-24 h-24 bg-slate-50 rounded-full mx-auto flex items-center justify-center group-hover:bg-green-600 transition-colors duration-500">
-                    <Briefcase className="w-10 h-10 text-green-600 group-hover:text-white transition-colors duration-500" />
+                    {item.icon}
                   </div>
                   <span className="absolute -top-2 right-1/2 translate-x-12 bg-green-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold border-4 border-white">
                     {item.step}
@@ -333,59 +376,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section className="py-24 bg-[#f7f7f7]">
-        <div className="max-w-[1400px] mx-auto px-4">
-          <div className="grid lg:grid-cols-3 gap-16">
-            <div>
-              <div className="mb-8">
-                <span className="text-green-600 font-bold uppercase tracking-widest text-sm mb-4 block">Our Micro Blogs</span>
-                <h2 className="text-4xl font-bold leading-tight">Latest News & Articles</h2>
-              </div>
-              <p className="text-slate-600 mb-10 leading-relaxed">
-                We encourage you to have a look at our daily Micro Blogs and give your inputs on what you observe can be done better.
-              </p>
-            </div>
-            
-            <div className="lg:col-span-2 grid md:grid-cols-2 gap-8">
-              {[
-                { 
-                  date: "10 Apr", 
-                  title: "Leadership Styles which can help Transformation.", 
-                  slug: "leadership-styles-which-can-help-transformation",
-                  img: "https://raftconsulting.in/wp-content/uploads/2024/04/Untitled-design-1-370x265.png" 
-                },
-                { 
-                  date: "06 Mar", 
-                  title: "Role of HR in Learning and Development", 
-                  slug: "role-of-hr-in-learning-and-development",
-                  img: "https://raftconsulting.in/wp-content/uploads/2024/03/Green-and-Beige-Human-Resources-Modern-Presentation--370x265.png" 
-                }
-              ].map((blog, i) => (
-                <div key={i} className="bg-white group overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img src={blog.img} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Blog" />
-                    <div className="absolute top-4 left-4 bg-green-600 text-white p-2 text-center rounded-sm min-w-[60px]">
-                      <div className="font-bold text-lg leading-none">{blog.date.split(' ')[0]}</div>
-                      <div className="text-xs uppercase font-bold">{blog.date.split(' ')[1]}</div>
-                    </div>
-                  </div>
-                  <div className="p-8">
-                    <div className="flex gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
-                      <span className="flex items-center gap-1"><Briefcase className="w-3 h-3" /> Business</span>
-                      <span className="flex items-center gap-1"><Smile className="w-3 h-3" /> 0 Comments</span>
-                    </div>
-                    <h3 className="text-xl font-bold mb-4 group-hover:text-green-600 transition-colors">
-                      <Link to={`/${blog.slug}/`}>{blog.title}</Link>
-                    </h3>
-                    <p className="text-slate-400 text-sm font-bold uppercase tracking-widest">By raft</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 }
