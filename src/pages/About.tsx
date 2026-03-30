@@ -8,7 +8,7 @@ export default function About() {
       <section className="relative py-24 bg-[#1c1c1c] overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="https://raftconsulting.in/wp-content/uploads/2022/11/nasa-Q1p7bh3SHj8-unsplash-1-scaled.jpg" 
+            src="/images/nasa-Q1p7bh3SHj8-unsplash-1-scaled.jpg" 
             className="w-full h-full object-cover"
             alt="Background"
           />
@@ -32,7 +32,7 @@ export default function About() {
             <div className="relative">
               <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://raftconsulting.in/wp-content/uploads/2022/11/clayton-cardinalli-hkJNx0EDbjE-unsplash-scaled.jpg" 
+                  src="/images/clayton-cardinalli-hkJNx0EDbjE-unsplash-scaled.jpg" 
                   className="w-full"
                   alt="Who We Are"
                 />

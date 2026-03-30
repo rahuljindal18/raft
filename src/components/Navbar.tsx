@@ -13,11 +13,11 @@ export default function Navbar({ isScrolled }: { isScrolled: boolean }) {
         <div className="flex justify-between h-24 items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="https://raftconsulting.in/" className="custom-logo-link" rel="home" aria-current="page">
+            <a href="https://raftconsulting.co.in/" className="custom-logo-link" rel="home" aria-current="page">
               <img
                 width="187"
                 height="60"
-                src="https://raftconsulting.in/wp-content/uploads/2022/12/logo-raft-white-1.png"
+                src="/images/logo-raft-white-1.png"
                 className="custom-logo"
                 alt="raFT Consulting"
                 decoding="async"

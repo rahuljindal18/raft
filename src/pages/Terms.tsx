@@ -33,7 +33,7 @@ export default function Terms() {
           <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed">
             <p className="mb-8">Welcome to Raft Consulting!</p>
             <p className="mb-8">
-              These terms and conditions outline the rules and regulations for the use of Raft Consulting’s Website, located at <a href="https://raftconsulting.in/" className="text-green-600 hover:underline">https://raftconsulting.in/</a>.
+              These terms and conditions outline the rules and regulations for the use of Raft Consulting’s Website, located at <a href="https://raftconsulting.co.in/" className="text-green-600 hover:underline">https://raftconsulting.co.in/</a>.
             </p>
             <p className="mb-8">
               By accessing this website we assume you accept these terms and conditions. Do not continue to use Raft Consulting if you do not agree to take all of the terms and conditions stated on this page.

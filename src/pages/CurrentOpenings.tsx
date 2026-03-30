@@ -12,7 +12,7 @@ const openings = [
     location: "Noida",
     description: "Should have experience as a Team Lead. Responsible for leading frontend development using React and managing a team of developers.",
     contact: "hr@raftconsulting.in",
-    image: "https://raftconsulting.in/wp-content/uploads/2022/12/Screenshot-2022-12-05-at-1.21.43-PM-768x761.png"
+    image: "/images/Screenshot-2022-12-05-at-1.21.43-PM-768x761.png"
   },
   {
     id: 2,
@@ -23,14 +23,14 @@ const openings = [
     location: "Remote / Hybrid",
     description: "Planning, designing, implementing, and administering a comprehensive global rewards strategy and programs including Compensation, Benefits and Employee wellness. Reports to Chief People Officer.",
     contact: "hr@raftconsulting.in",
-    image: "https://raftconsulting.in/wp-content/uploads/2022/12/Screenshot-2022-11-29-at-1.27.16-PM-1024x848.png"
+    image: "/images/Screenshot-2022-11-29-at-1.27.16-PM-1024x848.png"
   }
 ];
 
 const hiringBanners = [
-  "https://raftconsulting.in/wp-content/uploads/2024/03/we-are-hiring-1-1024x1024.png",
-  "https://raftconsulting.in/wp-content/uploads/2024/03/Red-And-White-We-Are-Hiring-Architect-Your-Story.png",
-  "https://raftconsulting.in/wp-content/uploads/2024/03/Black-and-White-Minimalist-We-Are-Hiring-Instagram-Post.png"
+  "/images/we-are-hiring-1-1024x1024.png",
+  "/images/Red-And-White-We-Are-Hiring-Architect-Your-Story.png",
+  "/images/Black-and-White-Minimalist-We-Are-Hiring-Instagram-Post.png"
 ];
 
 export default function CurrentOpenings() {

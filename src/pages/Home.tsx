@@ -65,12 +65,12 @@ export default function Home() {
     {
       title: "Helping Businesses Grow",
       description: "Organizations need the right resource to grow and expand their horizons in the new business scenario. We let businesses focus on their core capability while we add to their resources.",
-      image: "https://raftconsulting.in/wp-content/uploads/2022/11/nasa-Q1p7bh3SHj8-unsplash-1-scaled.jpg"
+      image: "/images/nasa-Q1p7bh3SHj8-unsplash-1-scaled.jpg"
     },
     {
       title: "Right Candidate | Right Skills | Right Fit",
       description: "Recruitment is all about understanding the basic characteristics of your organisation. Giving you the right fit each time, in terms of Knowledge, Skills and Attributes.",
-      image: "https://raftconsulting.in/wp-content/uploads/2022/11/clayton-cardinalli-hkJNx0EDbjE-unsplash-scaled.jpg"
+      image: "/images/clayton-cardinalli-hkJNx0EDbjE-unsplash-scaled.jpg"
     }
   ];
 
@@ -143,25 +143,25 @@ export default function Home() {
               { 
                 title: "Recruitment Solutions", 
                 icon: <Target className="w-10 h-10 text-green-600" />,
-                img: "https://raftconsulting.in/wp-content/uploads/2022/11/benjamin-child-GWe0dlVD9e0-unsplash-scaled.jpg",
+                img: "/images/benjamin-child-GWe0dlVD9e0-unsplash-scaled.jpg",
                 link: "/recruitment-solutions/"
               },
               { 
                 title: "Staffing Solutions", 
                 icon: <Lightbulb className="w-10 h-10 text-green-600" />,
-                img: "https://raftconsulting.in/wp-content/uploads/2022/11/smartworks-coworking-Uz8THWPXwhI-unsplash-scaled.jpg",
+                img: "/images/smartworks-coworking-Uz8THWPXwhI-unsplash-scaled.jpg",
                 link: "/outsourced-staffing/"
               },
               { 
                 title: "Learning and Development", 
                 icon: <Settings className="w-10 h-10 text-green-600" />,
-                img: "https://raftconsulting.in/wp-content/uploads/2022/11/carlos-arthur-m-r-963uzyQwa6s-unsplash-scaled.jpg",
+                img: "/images/carlos-arthur-m-r-963uzyQwa6s-unsplash-scaled.jpg",
                 link: "/learning-and-development/"
               },
               { 
                 title: "Accounting Compliances", 
                 icon: <CheckCircle2 className="w-10 h-10 text-green-600" />,
-                img: "https://raftconsulting.in/wp-content/uploads/2022/11/gemma-evans-X9BaomHPW-s-unsplash-scaled.jpg",
+                img: "/images/gemma-evans-X9BaomHPW-s-unsplash-scaled.jpg",
                 link: "/accounting-compliances/"
               }
             ].map((feature, i) => (
@@ -256,7 +256,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="aspect-[3/4] overflow-hidden rounded-xl">
                   <img 
-                    src={activeTab === "clients" ? "https://raftconsulting.in/wp-content/uploads/2022/11/krakenimages-Y5bvRlcCx8k-unsplash-scaled.jpg" : "https://raftconsulting.in/wp-content/uploads/2022/11/charlesdeluvio-Lks7vei-eAg-unsplash-scaled.jpg"} 
+                    src={activeTab === "clients" ? "/images/krakenimages-Y5bvRlcCx8k-unsplash-scaled.jpg" : "/images/charlesdeluvio-Lks7vei-eAg-unsplash-scaled.jpg"} 
                     className="w-full h-full object-cover"
                     alt="Agency"
                   />
@@ -300,7 +300,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img 
-                src="https://raftconsulting.in/wp-content/uploads/2022/11/Screenshot-2022-11-28-at-3.18.33-PM.png" 
+                src="/images/Screenshot-2022-11-28-at-3.18.33-PM.png" 
                 className="w-full rounded-2xl shadow-2xl"
                 alt="Solutions"
               />

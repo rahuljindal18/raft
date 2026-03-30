@@ -8,7 +8,7 @@ const solutions = [
     category: "Recruitment",
     description: "Finding the right candidate; ensuring the right fit is our endeavour",
     icon: <Briefcase className="w-10 h-10" />,
-    image: "https://raftconsulting.in/wp-content/uploads/2021/03/service-1.jpg",
+    image: "/images/service-1.jpg",
     link: "/recruitment-solutions"
   },
   {
@@ -16,7 +16,7 @@ const solutions = [
     category: "Staffing",
     description: "Giving your organisation the edge, to compete in a dynamic market.",
     icon: <Users className="w-10 h-10" />,
-    image: "https://raftconsulting.in/wp-content/uploads/2021/03/service-2.jpg",
+    image: "/images/service-2.jpg",
     link: "/outsourced-staffing"
   },
   {
@@ -24,7 +24,7 @@ const solutions = [
     category: "Talent Management",
     description: "Enabling your teams to with tools of knowledge and productivity, with the help of experts in the field",
     icon: <GraduationCap className="w-10 h-10" />,
-    image: "https://raftconsulting.in/wp-content/uploads/2021/03/service-3.jpg",
+    image: "/images/service-3.jpg",
     link: "/learning-and-development"
   },
   {
@@ -32,7 +32,7 @@ const solutions = [
     category: "Compliances",
     description: "Providing the right compliance advisory and solution for the smooth functioning of the business",
     icon: <FileText className="w-10 h-10" />,
-    image: "https://raftconsulting.in/wp-content/uploads/2021/03/service-4.jpg",
+    image: "/images/service-4.jpg",
     link: "/accounting-compliances"
   }
 ];
